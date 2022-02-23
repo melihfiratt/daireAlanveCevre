@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+
+public class Test {
+	public static void main(String[] args) {
+		/**
+		 * @author M. Firat Sen, 2022
+		 */
+		double pi_number, radius, dashedCircleEnvironment, angle, dashedCircleArea;
+		pi_number = 3.14;
+		Scanner input = new Scanner(System.in);
+		System.out.println("What is the radius of circle: ");
+		radius = input.nextDouble();
+		System.out.println("What is the angle of circle: ");
+		angle = input.nextDouble();
+		dashedCircleEnvironment = ((pi_number*2*radius)*angle/360) + 2*radius;
+		dashedCircleArea = (pi_number*radius*radius)*angle/360;
+		System.out.println("Area of dashed circle: ");
+		System.out.println(dashedCircleArea);
+		System.out.println("Environment of dashed circle: ");
+		System.out.println(dashedCircleEnvironment);
+		
+	}
+}
